@@ -15,7 +15,7 @@ export default {
         <AppHeader />
     </header>
 
-    <div class="container_main">
+    <div class="container_main d-flex justify-content-center py-4">
         <router-view></router-view>
     </div>
 
