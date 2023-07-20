@@ -25,7 +25,7 @@ div {
     padding-top: 1.5rem;
     padding-bottom: 1.4rem;
     gap: 2rem;
-
+    flex-wrap: wrap;
 }
 
 .mybtn1 {
