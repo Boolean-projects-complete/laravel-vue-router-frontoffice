@@ -16,7 +16,7 @@ export default {
             <AppHeader />
         </header>
 
-        <div class="container_main d-flex justify-content-center">
+        <div class="container_main">
             <router-view></router-view>
         </div>
         <AppFooter />
@@ -29,6 +29,11 @@ export default {
 
 
 .cont {
-    width: 900px;
+    max-width: 1200px;
+}
+
+.container_main {
+    width: 1200px;
+
 }
 </style>
