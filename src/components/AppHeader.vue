@@ -47,5 +47,6 @@ export default {
         background-image: url('../assets/img/jumbo.png');
         background-size: cover;
         height: 400px;
+        object-fit: contain;
     }
 </style>
