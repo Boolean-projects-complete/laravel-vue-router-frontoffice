@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <input type="text" placeholder="GIN TONIC... SPITZ...">
+        <input type="text" placeholder="GIN TONIC... SPRITZ...">
         <select name="" id="">
             <option value="">CATEGORIES</option>
         </select>
