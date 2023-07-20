@@ -11,16 +11,18 @@ export default {
 </script>
 
 <template>
-    <header>
-        <AppHeader />
-    </header>
+    <div class="cont">
 
-    <div class="container_main d-flex justify-content-center py-4">
-        <router-view></router-view>
+        <header>
+            <AppHeader />
+        </header>
+
+        <div class="container_main d-flex justify-content-center py-4">
+            <router-view></router-view>
+        </div>
+
+        <AppFooter />
     </div>
-
-
-    <AppFooter />
 </template>
 
 <style lang="scss">
