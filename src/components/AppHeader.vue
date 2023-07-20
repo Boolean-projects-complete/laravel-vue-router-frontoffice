@@ -15,6 +15,8 @@ export default {
                 <div class="jumbo">
                     <button class="mybtn" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasWithBothOptions">
+                        <img class="image-button" src="../assets/img/Refreshing-Summer-Drinks-Fifteen-Spatulas-1.jpg"
+                            alt="">
                     </button>
                 </div>
             </div>
@@ -52,9 +54,10 @@ export default {
 .mybtn {
     width: 40px;
     aspect-ratio: 1;
-    background-color: black;
     border: none;
-    opacity: 30%;
+    // opacity: 30%;
+    margin-right: 2rem;
+    border-radius: 1rem;
 }
 
 .mybtn:hover {
@@ -81,6 +84,12 @@ export default {
         aspect-ratio: 1.66;
 
     }
+
+}
+
+.image-button {
+    height: 50px;
+    border-radius: 1rem;
 
 }
 </style>
