@@ -19,18 +19,21 @@
 
 div {
 
-    @include dfc;
+    // @include dfc;
     width: 100%;
     background-color: $c-bg;
     padding-top: 1.5rem;
     padding-bottom: 1.4rem;
     gap: 2rem;
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .mybtn1 {
     border: none;
     height: 3.5rem;
+    width: 12rem;
     padding-inline: 2rem;
     border-radius: 10rem;
     background-color: $c-bg-i;
@@ -41,6 +44,7 @@ div {
 select {
     border: 2px solid $c-bg-txt;
     height: 3.5rem;
+    width: 20rem;
     padding-inline: 2rem;
     border-radius: 10px;
     background-color: $c-bg-i;
@@ -51,6 +55,7 @@ select {
 input {
     border: 2px solid $c-bg-txt;
     height: 3.5rem;
+    width: 22rem;
     padding-inline: 2rem;
     border-radius: 10rem;
     background-color: $c-bg-i;

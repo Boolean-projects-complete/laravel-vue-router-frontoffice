@@ -71,12 +71,13 @@ export default {
 
     .jumbo {
         display: flex;
+        margin: 2rem;
         padding: 1.7rem;
         justify-content: flex-end;
         align-items: flex-start;
         background-image: url('../assets/img/jumbo.png');
         background-size: cover;
-        width: 60%;
+        width: 1200px;
 
         aspect-ratio: 1.66;
 

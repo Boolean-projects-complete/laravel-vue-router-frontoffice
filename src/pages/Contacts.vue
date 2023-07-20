@@ -21,23 +21,24 @@
 
 <style lang="scss" scoped>
 @use '../assets/styles/general.scss' as *;
-    
-div{
-        max-width: 70%;
-        margin: 0 auto;
-        padding: 2rem;
-        background-color: $c-bg;
-        color: white;
 
-        form {
-            @include dfj;
-            flex-direction: column;
-            padding: 2rem;
-            .inpt{
-                background-color: rgba(242, 242, 242, 0);
-                border: 2px solid $c-bg-txt;
-                border-radius: 3px;
-            }
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: $c-bg;
+    color: white;
+
+    form {
+        @include dfj;
+        flex-direction: column;
+        padding: 2rem;
+
+        .inpt {
+            background-color: rgba(242, 242, 242, 0);
+            border: 2px solid $c-bg-txt;
+            border-radius: 3px;
+        }
     }
-    }
+}
 </style>
