@@ -1,5 +1,5 @@
 <script>
-
+import AppNav from './AppNav.vue';
 export default {
 
     components: {
@@ -40,14 +40,44 @@ export default {
 
         </div>
     </div>
-</template>
+
+</div></template>
 
 
 <style lang="scss" scoped>
-.c_ontainer {
-    background-image: url('../assets/img/jumbo.png');
-    background-size: cover;
-    height: 400px;
-    object-fit: contain;
+@use '../assets/styles/general.scss' as *;
+
+.mybtn {
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: black;
+    border: none;
+    opacity: 30%;
+}
+
+.mybtn:hover {
+    opacity: 80%;
+
+}
+
+.big_container {
+    @include dfc;
+    background-color: $c-bg;
+    padding-top: 1.5rem;
+    padding-bottom: 1.4rem;
+
+    .c_ontainer {
+        display: flex;
+        padding: 1.7rem;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-image: url('../assets/img/jumbo.png');
+        background-size: cover;
+        width: 80%;
+
+        aspect-ratio: 1.66;
+
+    }
+
 }
 </style>
