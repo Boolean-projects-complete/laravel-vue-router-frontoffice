@@ -1,9 +1,24 @@
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faWhiskeyGlass } from '@fortawesome/free-solid-svg-icons'
+
 export default {
-
-    components: {
-
-    }
+    data() {
+        return {
+            isHover: false,
+            iconButton: "",
+        }
+    },
+    methods: {
+        randomIcon () {
+            const icon = ["wine-bottle", "wine-glass", "whiskey-glass", "martini-glass-empty", "martini-glass-citrus", "martini-glass", "champagne-glasses", "beer-mug-empty"]
+            let rndIcon = Math.floor(Math.random() * 8);
+            this.iconButton = icon[rndIcon];
+        }
+    },
+    created() {
+        this.randomIcon()
+    },
 }
 
 </script>
@@ -15,12 +30,17 @@ export default {
                 <div class="jumbo">
                     <button class="mybtn" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasWithBothOptions">
+                        <template v-if="isHover">
+                            <fa :icon="iconButton" shake size="2xl" style="color: #fff" id="buttonDrink" @mouseover="isHover = false" @mouseout="isHover = true"/>
+                        </template>
+                        <template v-else>
+                            <fa :icon="iconButton" size="2xl" style="color: #fff" id="buttonDrink" @mouseover="isHover = false" @mouseout="isHover = true"/>
+                        </template>
                     </button>
                 </div>
             </div>
-
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel">
+                aria-labelledby="offcanvasWithBothOptionsLabel"> 
                 <ul>
                     <li>
                         <router-link :to="{ name: 'home' }" class="nav-link active" aria-current="page">
@@ -52,9 +72,10 @@ export default {
 .mybtn {
     width: 40px;
     aspect-ratio: 1;
-    background-color: black;
+    background-color: rgba($color: #000000, $alpha: 1);
     border: none;
-    opacity: 30%;
+    opacity: 100%;
+    position: fixed;
 }
 
 .mybtn:hover {
