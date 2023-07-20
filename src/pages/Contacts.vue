@@ -15,6 +15,9 @@
             <label for="message">Corpo del messaggio</label>
             <textarea class="inpt" name="message" id="message" cols="30" rows="10"></textarea>
         </form>
+        <button data-v-20ab8fd6="" class="mybtn1">INVIA</button>
+
+
     </div>
 </template>
 
@@ -39,6 +42,23 @@ div {
             border: 2px solid $c-bg-txt;
             border-radius: 3px;
         }
+
+        form {
+            @include dfj;
+            flex-direction: column;
+            padding: 2rem;
+
+            .inpt {
+                background-color: rgba(242, 242, 242, 0);
+                border: 2px solid $c-bg-txt;
+                border-radius: 3px;
+            }
+        }
     }
-}
+
+    .mybtn1 {
+        margin-left: 2rem;
+
+
+    }
 </style>
