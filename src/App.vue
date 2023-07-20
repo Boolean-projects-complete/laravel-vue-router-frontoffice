@@ -11,22 +11,24 @@ export default {
 </script>
 
 <template>
-    <div class="cont">
-
+    <div class="cont d-flex flex-column justify-contents-center">
         <header>
             <AppHeader />
         </header>
 
-        <div class="container_main d-flex justify-content-center py-4">
+        <div class="container_main d-flex justify-content-center">
             <router-view></router-view>
         </div>
-
+        <AppFooter />
     </div>
-    <AppFooter />
 </template>
 
 <style lang="scss">
-@import 'bootstrap/scss/bootstrap';
 @use './assets/styles/general.scss' as *;
 @import 'bootstrap/scss/bootstrap';
+
+
+.cont {
+    width: 900px;
+}
 </style>
