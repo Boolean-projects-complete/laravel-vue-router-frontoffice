@@ -12,7 +12,7 @@ export default {
     <div>
         <div>
             <div class="big_container">
-                <div class="c_ontainer">
+                <div class="jumbo">
                     <button class="mybtn" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasWithBothOptions">
                     </button>
@@ -67,8 +67,9 @@ export default {
     background-color: $c-bg;
     padding-top: 1.5rem;
     padding-bottom: 1.4rem;
+    width: 100%;
 
-    .c_ontainer {
+    .jumbo {
         display: flex;
         padding: 1.7rem;
         justify-content: flex-end;
