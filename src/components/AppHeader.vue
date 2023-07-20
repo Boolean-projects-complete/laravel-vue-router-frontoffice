@@ -67,7 +67,7 @@ export default {
     background-color: $c-bg;
     padding-top: 1.5rem;
     padding-bottom: 1.4rem;
-    width: 100%;
+    max-width: 100%;
 
     .jumbo {
         display: flex;
@@ -76,7 +76,7 @@ export default {
         align-items: flex-start;
         background-image: url('../assets/img/jumbo.png');
         background-size: cover;
-        width: 80%;
+        width: 60%;
 
         aspect-ratio: 1.66;
 

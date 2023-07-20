@@ -20,14 +20,15 @@
 div {
 
     @include dfc;
-    width: 100vw;
+    width: 100%;
     background-color: $c-bg;
     padding-top: 1.5rem;
     padding-bottom: 1.4rem;
     gap: 2rem;
 
 }
-.mybtn1{
+
+.mybtn1 {
     border: none;
     height: 3.5rem;
     padding-inline: 2rem;
@@ -36,7 +37,8 @@ div {
     font-weight: bolder;
     color: $c-bg-txt;
 }
-select{
+
+select {
     border: 2px solid $c-bg-txt;
     height: 3.5rem;
     padding-inline: 2rem;
@@ -45,7 +47,8 @@ select{
     font-weight: bolder;
     color: $c-bg-txt;
 }
-input{
+
+input {
     border: 2px solid $c-bg-txt;
     height: 3.5rem;
     padding-inline: 2rem;
@@ -53,16 +56,19 @@ input{
     background-color: $c-bg-i;
     font-weight: bolder;
 }
-input::placeholder{
+
+input::placeholder {
     color: $c-bg-txt;
 }
-input:hover::placeholder{
+
+input:hover::placeholder {
     color: white;
 }
-.mybtn1:hover{
+
+.mybtn1:hover {
     color: white;
 }
-select:hover{
+
+select:hover {
     color: white;
-}
-</style>
+}</style>

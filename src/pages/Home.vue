@@ -12,8 +12,8 @@ export default {
 
 <template>
     <div class="d-flex flex-column align-items-center">
-        <DrinkFilter />
-        <div class="">
+        <DrinkFilter class="filter" />
+        <div class="big_container_cards">
             <DrinkCard />
         </div>
     </div>
@@ -21,5 +21,11 @@ export default {
 
 
 <style lang="scss" scoped>
+.filter {
+    width: 100%;
+}
 
+.big_container_cards {
+    max-width: 1200px;
+}
 </style>

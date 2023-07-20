@@ -29,11 +29,6 @@ export default {
 
 
 .cont {
-    max-width: 1200px;
-}
-
-.container_main {
-    width: 1200px;
-
+    // max-width: 1200px;
 }
 </style>
