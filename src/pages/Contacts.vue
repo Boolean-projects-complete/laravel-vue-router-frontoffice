@@ -55,10 +55,11 @@ div {
             }
         }
     }
+}
 
-    .mybtn1 {
-        margin-left: 2rem;
+.mybtn1 {
+    margin-left: 2rem;
 
 
-    }
+}
 </style>

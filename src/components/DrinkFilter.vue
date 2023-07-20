@@ -19,14 +19,12 @@
 
 div {
 
-    // @include dfc;
+    @include dfc;
     width: 100%;
     background-color: $c-bg;
     padding-top: 1.5rem;
     padding-bottom: 1.4rem;
     gap: 2rem;
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 

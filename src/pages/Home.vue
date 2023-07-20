@@ -49,7 +49,8 @@ export default {
 
 .big_container_cards {
     max-width: 1200px;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .container_card {
