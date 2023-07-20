@@ -29,7 +29,7 @@ export default {
                     </li>
                     <li>
                         <router-link :to="{ name: 'about-us' }" class="nav-link active" aria-current="page">
-                            About
+                            About Us
                         </router-link>
                     </li>
                     <li>
