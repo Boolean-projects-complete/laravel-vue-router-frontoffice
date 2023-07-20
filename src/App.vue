@@ -19,9 +19,11 @@ export default {
         <router-view></router-view>
     </div>
 
+
     <AppFooter />
 </template>
 
 <style lang="scss">
 @import 'bootstrap/scss/bootstrap';
+@use './assets/styles/general.scss' as *;
 </style>
