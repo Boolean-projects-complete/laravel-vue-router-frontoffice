@@ -27,5 +27,6 @@ export default {
 
 .big_container_cards {
     max-width: 1200px;
+    margin-top: 5rem;
 }
 </style>

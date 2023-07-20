@@ -4,9 +4,9 @@
 
 <template>
     <div>
-        <input type="text" placeholder="GIN TONIC... SRPITZ...">
+        <input type="text" placeholder="GIN TONIC... SPITZ...">
         <select name="" id="">
-            <option value="">CATEGORY</option>
+            <option value="">CATEGORIES</option>
         </select>
         <button class="mybtn1">SEARCH</button>
 
@@ -71,4 +71,5 @@ input:hover::placeholder {
 
 select:hover {
     color: white;
-}</style>
+}
+</style>

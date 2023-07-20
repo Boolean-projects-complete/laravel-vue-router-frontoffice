@@ -31,4 +31,8 @@ export default {
 .cont {
     // max-width: 1200px;
 }
+
+.container_main {
+    background-color: $c-bg;
+}
 </style>
