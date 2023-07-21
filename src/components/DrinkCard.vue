@@ -8,11 +8,11 @@ export default {
 
 <template>
     <div type="button" data-bs-toggle="modal" :data-bs-target="'#' + objCocktail.id"
-        class="card_drink d-flex flex-column justify-content-center my-3 mx-3" style="width: 350px; height: 500px">
+        class="card_drink d-flex flex-column justify-content-center my-3 mx-3" style="width: 350px; height: 540px">
         <h1 class="text-center pt-3 pb-2">{{ objCocktail.nameDrink }}</h1>
         <img :src="objCocktail.imgURL" alt="objCocktail.nameDrink" class="img_drink mx-4" />
         <h4 class="text-center pt-2">Category:</h4>
-        <h5 class="text-center p">"{{ objCocktail.category }}"</h5>
+        <h5 class="text-center">"{{ objCocktail.category }}"</h5>
     </div>
 
     <!-- <button  class="btn btn-primary" >
