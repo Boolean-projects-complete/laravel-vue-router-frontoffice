@@ -103,7 +103,7 @@ export default {
         align-items: flex-start;
         background-image: url('../assets/img/jumbo.png');
         background-size: cover;
-        width: 1200px;
+        width: $d-cont;
 
         aspect-ratio: 1.66;
 

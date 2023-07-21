@@ -46,10 +46,11 @@ export default {
 </template>
 
 <style>
-.pagination .pagination-container {
+.pagination .pagination-container{
     display: flex;
     column-gap: 10px;
     margin-bottom: 3rem;
+
 }
 
 .pagination .paginate-buttons {

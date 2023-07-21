@@ -71,6 +71,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/styles/general.scss' as *;
 .container_filter {
     max-width: 1200px;
 }
@@ -80,7 +81,7 @@ export default {
 }
 
 .big_container_cards {
-    max-width: 1200px;
+    max-width: $d-cont;
     margin-top: 3rem;
     padding-bottom: 2rem;
 }
@@ -88,5 +89,6 @@ export default {
 .container_card {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 </style>
