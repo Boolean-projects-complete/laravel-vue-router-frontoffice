@@ -68,9 +68,6 @@ export default {
 
         <AppPagination :MaxPages="totalPages" @sendCurrentPage="changeCurrentPage($event)" />
     </div>
-    <div class="modal-dialog modal-dialog-scrollable">
-        Modal
-    </div>
 </template>
 
 <style lang="scss" scoped>

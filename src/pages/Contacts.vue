@@ -57,9 +57,11 @@ export default {
             <input class="inpt" type="email" id="email" v-model="email">
             <label for="message">Corpo del messaggio</label>
             <textarea class="inpt" name="message" id="message" cols="30" rows="10" v-model="message"></textarea>
+            <button data-v-20ab8fd6="" type="submit" class="mybtn1 my-2" :disabled="isSending">INVIA</button>
+
 
         </form>
-        <button data-v-20ab8fd6="" type="submit" class="mybtn1" :disabled="isSending">INVIA</button>
+
 
 
     </div>
@@ -101,9 +103,11 @@ div {
     }
 }
 
+.div_button {
+    width: 100%;
+}
+
 .mybtn1 {
-    margin-left: 2rem;
-
-
+    margin-top: 1rem;
 }
 </style>
