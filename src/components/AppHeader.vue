@@ -81,7 +81,6 @@ export default {
     background-color: rgba($color: #000000, $alpha: 0);
     border: none;
     opacity: 100%;
-    position: fixed;
 }
 
 .mybtn:hover {
