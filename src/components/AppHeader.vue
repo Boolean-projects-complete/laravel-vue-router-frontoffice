@@ -5,7 +5,7 @@ import { faWhiskeyGlass } from '@fortawesome/free-solid-svg-icons'
 export default {
     data() {
         return {
-            isHover: false,
+            isHover: true,
             iconButton: "",
         }
     },
@@ -72,7 +72,7 @@ export default {
 .mybtn {
     width: 40px;
     aspect-ratio: 1;
-    background-color: rgba($color: #000000, $alpha: 1);
+    background-color: rgba($color: #000000, $alpha: 0);
     border: none;
     opacity: 100%;
     position: fixed;
