@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import VueAwesomePaginate from "vue-awesome-paginate";
 
 import App from './App.vue'
 import * as bootstrap from "bootstrap";
@@ -14,6 +15,7 @@ import { router } from './router';
 
 createApp(App)
     .use(router)
+    .use(VueAwesomePaginate)
     .component('fa', FontAwesomeIcon)
     .mount('#app')
 
