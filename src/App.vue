@@ -20,9 +20,6 @@ export default {
             <router-view></router-view>
         </div>
         <AppFooter />
-        <div class="modal-dialog modal-dialog-scrollable">
-            Modal
-        </div>
     </div>
 </template>
 
