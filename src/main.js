@@ -19,4 +19,4 @@ createApp(App)
 const icon = ["wine-bottle", "wine-glass", "whiskey-glass", "martini-glass-empty", "martini-glass-citrus", "martini-glass", "champagne-glasses", "beer-mug-empty"];
 let rndIcon = Math.floor(Math.random() * 8);
 let favicon = document.getElementById('favicon');
-favicon.setAttribute('href', "public/" + icon[rndIcon] + "-solid.svg");
+favicon.setAttribute('href', icon[rndIcon] + "-solid.svg");
