@@ -28,11 +28,6 @@ export default {
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 
-
-.cont {
-    // max-width: 1200px;
-}
-
 .container_main {
     background-color: $c-bg;
 }

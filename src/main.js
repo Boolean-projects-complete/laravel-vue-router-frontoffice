@@ -6,6 +6,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import App from './App.vue'
 import * as bootstrap from "bootstrap";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 library.add(fas);
 
