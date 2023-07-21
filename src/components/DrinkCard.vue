@@ -23,11 +23,12 @@ export default {
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h2 class="modal-title" id="exampleModalLabel" style="color: white;">{{ objCocktail.nameDrink }}
+                    </h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h1 class="text-center pt-3 pb-2" style="color:white;">{{ objCocktail.nameDrink }}</h1>
+                    <h1 class="text-center pt-3 pb-2" style="color:white;"></h1>
                     <div class="d-flex justify-content-center m-3">
                         <img :src="objCocktail.imgURL" alt="objCocktail.nameDrink" class="img_drink img-fluid mx-4" />
                     </div>
