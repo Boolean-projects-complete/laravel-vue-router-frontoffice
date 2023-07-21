@@ -28,7 +28,7 @@ export default {
                 </div>
                 <div class="modal-body">
                     <h1 class="text-center pt-3 pb-2" style="color:white;">{{ objCocktail.nameDrink }}</h1>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center m-3">
                         <img :src="objCocktail.imgURL" alt="objCocktail.nameDrink" class="img_drink img-fluid mx-4" />
                     </div>
                     <ul class="px-4 py-4 m-0">
