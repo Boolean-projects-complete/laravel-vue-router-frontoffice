@@ -59,11 +59,6 @@ export default {
                             <i class="px-1 bi bi-telephone"></i>Contacs
                         </router-link>
                     </li>
-                    <li>
-                        <router-link :to="{ name: 'cocktails.show' }" class="nav-link active" aria-current="page">
-                            View
-                        </router-link>
-                    </li>
                 </ul>
             </div>
         </div>
