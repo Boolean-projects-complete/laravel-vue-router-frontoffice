@@ -37,6 +37,7 @@ div {
     background-color: $c-bg-i;
     font-weight: bolder;
     color: $c-bg-txt;
+    transition: all linear .2s;
 }
 
 select {
@@ -48,6 +49,7 @@ select {
     background-color: $c-bg-i;
     font-weight: bolder;
     color: $c-bg-txt;
+    transition: all linear .2s;
 }
 
 input {
@@ -58,21 +60,26 @@ input {
     border-radius: 10rem;
     background-color: $c-bg-i;
     font-weight: bolder;
+    transition: all linear .2s;
 }
 
 input::placeholder {
     color: $c-bg-txt;
+    transition: all linear .2s;
 }
 
 input:hover::placeholder {
+    transition: all linear .2s;
     color: white;
 }
 
 .mybtn1:hover {
     color: white;
+    transition: all linear .2s;
 }
 
 select:hover {
+    transition: all linear .2s;
     color: white;
 }
 </style>

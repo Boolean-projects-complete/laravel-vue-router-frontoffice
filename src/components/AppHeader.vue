@@ -93,4 +93,26 @@ export default {
     border-radius: 1rem;
 
 }
+.offcanvas{
+    background-color: $c-bg;
+    padding: 2.5rem;
+    max-width: 270px;
+    width: 40%;
+
+}
+ul{
+    @include dfj;
+    flex-direction: column;
+    gap: 1.2rem;
+    li{
+        font-size: 1.9rem;
+        color: $c-bg-txt;
+        transition: all linear .1s;
+    }
+    li:hover{
+        font-size: 2rem;
+        color: white;
+        transition: all linear .1s;
+    }
+}
 </style>
