@@ -1,12 +1,14 @@
 <script>
 import DrinkFilter from "../components/DrinkFilter.vue";
 import DrinkCard from "../components/DrinkCard.vue";
+import AppPagination from "../components/AppPagination.vue";
 import axios from "axios";
 
 export default {
     components: {
         DrinkFilter,
         DrinkCard,
+        AppPagination,
     },
     data() {
         return {
@@ -14,17 +16,21 @@ export default {
             arrCategory: [],
             searchString: "",
             category: "",
+            page: 1,
+            totalPages: 0,
         };
     },
     methods: {
         getCocktails() {
             axios.get("http://localhost:8000/api/cocktails", {
                 params: {
+                    page: this.page,
                     q: this.searchString,
                     category: this.category,
                 }
             }).then(response => {
                 this.arrCocktails = response.data.data;
+                this.totalPages = response.data.total;
             });
         },
         getCategory() {
@@ -33,9 +39,13 @@ export default {
             });
         },
         startSearch({ category, searchString }) {
-            this.category = category
-            this.searchString = searchString
-            this.getCocktails()
+            this.category = category;
+            this.searchString = searchString;
+            this.getCocktails();
+        },
+        changeCurrentPage(currentPage) {
+            this.page = currentPage;
+            this.getCocktails();
         }
     },
     created() {
@@ -54,6 +64,8 @@ export default {
                 <DrinkCard v-for="cocktail in arrCocktails" :key="cocktail.id" :objCocktail="cocktail" />
             </div>
         </div>
+
+        <AppPagination :MaxPages="totalPages" @sendCurrentPage="changeCurrentPage($event)" />
     </div>
 </template>
 
@@ -69,7 +81,7 @@ export default {
 .big_container_cards {
     max-width: 1200px;
     margin-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .container_card {

@@ -4,4 +4,6 @@ import * as bootstrap from "bootstrap";
 
 import { router } from './router';
 
-createApp(App).use(router).mount('#app')
+import VueAwesomePaginate from "vue-awesome-paginate";
+
+createApp(App).use(router).use(VueAwesomePaginate).mount('#app')
