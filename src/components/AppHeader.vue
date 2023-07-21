@@ -1,9 +1,24 @@
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faWhiskeyGlass } from '@fortawesome/free-solid-svg-icons'
+
 export default {
-
-    components: {
-
-    }
+    data() {
+        return {
+            isHover: true,
+            iconButton: "",
+        }
+    },
+    methods: {
+        randomIcon() {
+            const icon = ["wine-bottle", "wine-glass", "whiskey-glass", "martini-glass-empty", "martini-glass-citrus", "martini-glass", "champagne-glasses", "beer-mug-empty"]
+            let rndIcon = Math.floor(Math.random() * 8);
+            this.iconButton = icon[rndIcon];
+        }
+    },
+    created() {
+        this.randomIcon()
+    },
 }
 
 </script>
@@ -15,16 +30,21 @@ export default {
                 <div class="jumbo">
                     <button class="mybtn" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasWithBothOptions">
-                        <img class="image-button" src="../assets/img/Refreshing-Summer-Drinks-Fifteen-Spatulas-1.jpg"
-                            alt="">
+                        <template v-if="isHover">
+                            <fa :icon="iconButton" shake size="2xl" style="color: #fff" id="buttonDrink"
+                                @mouseover="isHover = false" @mouseout="isHover = true" />
+                        </template>
+                        <template v-else>
+                            <fa :icon="iconButton" size="2xl" style="color: #fff" id="buttonDrink"
+                                @mouseover="isHover = false" @mouseout="isHover = true" />
+                        </template>
                     </button>
                 </div>
             </div>
-
-            <div class="menu offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
-                <ul class="py-4">
-                    <li class="px-4" style="font-weight: 700;">
+                <ul>
+                    <li>
                         <router-link :to="{ name: 'home' }" class="nav-link active" aria-current="page">
                             <i class="px-1 bi bi-house-door-fill"></i>Home
                         </router-link>
@@ -58,10 +78,10 @@ export default {
 .mybtn {
     width: 40px;
     aspect-ratio: 1;
+    background-color: rgba($color: #000000, $alpha: 0);
     border: none;
-    // opacity: 30%;
-    margin-right: 2rem;
-    border-radius: 1rem;
+    opacity: 100%;
+    position: fixed;
 }
 
 .mybtn:hover {
