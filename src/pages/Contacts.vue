@@ -84,7 +84,8 @@ div {
         padding: 2rem;
 
         .inpt {
-            background-color: rgba(242, 242, 242, 0);
+            background-color: rgba($c-bg-txt, 0.2);
+            color: #fff;
             border: 2px solid $c-bg-txt;
             border-radius: 3px;
         }
