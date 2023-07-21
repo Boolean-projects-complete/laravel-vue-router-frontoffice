@@ -1,24 +1,48 @@
 <script>
-
+export default {
+    props: {
+        arrCategory: Array,
+    },
+    data() {
+        return {
+            category: "",
+            searchString: "",
+        }
+    },
+    methods: {
+        searchCocktail() {
+            this.$router.push({
+                name: "home",
+                query: {
+                    q: this.searchString,
+                    category: this.category
+                },
+            });
+        }
+    },
+}
 </script>
 
 <template>
-    <div>
-        <input type="text" placeholder="GIN TONIC... SPRITZ...">
-        <select name="" id="">
-            <option value="">CATEGORIES</option>
+    <form @submit.prevent="searchCocktail">
+        <input type="text" placeholder="GIN TONIC... SPRITZ..." v-model="searchString">
+        <select v-model="category">
+            <option value="" selected>All Categories</option>
+            <option v-for="category in arrCategory" :key="category" :value="category.category">
+                {{ category.category }}
+            </option>
         </select>
-        <button class="mybtn1">SEARCH</button>
-
-    </div>
+        <button class="mybtn1" @click="$emit('pressBtn', { category: category, searchString: searchString })">
+            SEARCH
+        </button>
+    </form>
 </template>
 
 
 <style lang="scss" scoped>
 @use '../assets/styles/general.scss' as *;
 
-div {
-
+form {
     @include dfc;
     width: 100%;
     background-color: $c-bg;

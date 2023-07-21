@@ -6,4 +6,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { router } from './router';
 
-createApp(App).use(router).mount('#app')
+import VueAwesomePaginate from "vue-awesome-paginate";
+
+createApp(App).use(router).use(VueAwesomePaginate).mount('#app')
