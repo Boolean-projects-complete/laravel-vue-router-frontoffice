@@ -45,7 +45,14 @@ export default {
     </div>
 </template>
 
-<style>
+<style lang="scss">
+@use '../assets/styles/general.scss' as *;
+
+.pagination {
+    @include dfc;
+    max-width: 1200px;
+}
+
 .pagination .pagination-container {
     display: flex;
     column-gap: 10px;
@@ -53,8 +60,8 @@ export default {
 }
 
 .pagination .paginate-buttons {
-    width: 50px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     background-color: #895128;
     border: none;
@@ -64,8 +71,8 @@ export default {
 
 .pagination .back-button,
 .pagination .next-button {
-    width: 100px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .pagination .paginate-buttons:hover,

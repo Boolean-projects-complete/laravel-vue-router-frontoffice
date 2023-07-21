@@ -8,8 +8,6 @@
         <form action="">
             <label for="name">Nome</label>
             <input class="inpt" type="text" id="name">
-            <label for="surname">Cognome</label>
-            <input class="inpt" type="text" id="surname">
             <label for="email">Email</label>
             <input class="inpt" type="email" id="email">
             <label for="message">Corpo del messaggio</label>

@@ -12,9 +12,7 @@ export default {
         <img :src="objCocktail.imgURL" alt="objCocktail.nameDrink" class="img_drink mx-4" />
         <h4 class="text-center pt-2">Category:</h4>
         <h5 class="text-center p">"{{ objCocktail.category }}"</h5>
-        <!-- <router-link :to="{ name: 'cocktails.show' }" class="nav-link active" aria-current="page">
-            <i class="px-1 bi bi-book"></i>About Us
-        </router-link> -->
+
     </div>
 </template>
 
