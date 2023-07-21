@@ -26,6 +26,7 @@ export default {
 <style lang="scss">
 @use './assets/styles/general.scss' as *;
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
 
 
 .cont {

@@ -3,6 +3,7 @@ import DrinkFilter from "../components/DrinkFilter.vue";
 import DrinkCard from "../components/DrinkCard.vue";
 import axios from "axios";
 
+
 export default {
     components: {
         DrinkFilter,

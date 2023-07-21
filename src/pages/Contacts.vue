@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <h1>Contattaci</h1>
+        <h1 class="px-4">Contattaci</h1>
         <form action="">
             <label for="name">Nome</label>
             <input class="inpt" type="text" id="name">

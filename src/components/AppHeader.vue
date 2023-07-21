@@ -21,26 +21,30 @@ export default {
                 </div>
             </div>
 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            <div class="menu offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
-                <ul>
-                    <li>
+                <ul class="py-4">
+                    <li class="px-4" style="font-weight: 700;">
                         <router-link :to="{ name: 'home' }" class="nav-link active" aria-current="page">
-                            Home
+                            <i class="px-1 bi bi-house-door-fill"></i>Home
                         </router-link>
                     </li>
-                    <li>
+                    <li class="px-4" style="font-weight: 700;">
                         <router-link :to="{ name: 'about-us' }" class="nav-link active" aria-current="page">
-                            About Us
+                            <i class="px-1 bi bi-book"></i>About Us
+                        </router-link>
+                    </li>
+                    <li class="px-4" style="font-weight: 700;">
+                        <router-link :to="{ name: 'contacts' }" class="nav-link active" aria-current="page">
+                            <i class="px-1 bi bi-telephone"></i>Contacs
                         </router-link>
                     </li>
                     <li>
-                        <router-link :to="{ name: 'contacts' }" class="nav-link active" aria-current="page">
-                            Contacs
+                        <router-link :to="{ name: 'cocktails.show' }" class="nav-link active" aria-current="page">
+                            View
                         </router-link>
                     </li>
                 </ul>
-
             </div>
         </div>
 
@@ -92,5 +96,15 @@ export default {
     height: 50px;
     border-radius: 1rem;
 
+}
+
+
+.menu {
+    background-color: $c-bg;
+    color: white;
+}
+
+li:hover {
+    color: #895128;
 }
 </style>

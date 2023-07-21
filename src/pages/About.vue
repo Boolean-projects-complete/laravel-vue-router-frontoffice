@@ -4,12 +4,14 @@
 
 <template>
     <div>
-        <h1>About us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus omnis cupiditate tempore, veniam
+        <h1 class="py-2">About us</h1>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus omnis cupiditate
+            tempore, veniam
             quidem soluta voluptatem odit possimus sapiente animi atque alias numquam? Porro recusandae praesentium eum odio
             blanditiis.</p>
-        <h3>La nostra Storia</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit natus perspiciatis quis molestiae ex expedita
+        <h3 class="py-2">La nostra Storia</h3>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit natus perspiciatis quis molestiae
+            ex expedita
             soluta quo dolore vitae quidem, sint aliquam minima optio cupiditate aspernatur maxime reiciendis in!
             Error non omnis exercitationem, ea aspernatur dolor, ipsam laudantium veniam in voluptates animi, reprehenderit
             neque? Suscipit, quidem, sequi laborum animi nostrum harum labore nulla iste incidunt provident inventore
@@ -30,4 +32,9 @@ div {
     padding: 2rem;
     background-color: $c-bg;
     color: white;
-}</style>
+}
+
+.text {
+    text-align: justify;
+}
+</style>
