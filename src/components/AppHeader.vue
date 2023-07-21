@@ -98,13 +98,29 @@ export default {
 
 }
 
-
-.menu {
+.offcanvas {
     background-color: $c-bg;
-    color: white;
+    padding: 2.5rem;
+    max-width: 370px;
+    width: 40%;
+
 }
 
-li:hover {
-    color: #895128;
+ul {
+    @include dfj;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    li {
+        font-size: 1.9rem;
+        color: $c-bg-txt;
+        transition: all linear .1s;
+    }
+
+    li:hover {
+        font-size: 2rem;
+        color: white;
+        transition: all linear .1s;
+    }
 }
 </style>
